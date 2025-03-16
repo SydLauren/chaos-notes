@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json", // Inherit from your main tsconfig
+  "compilerOptions": {
+    "module": "commonjs", // Jest works best with CommonJS modules
+    "esModuleInterop": true, // Enable interoperability with CommonJS
+    "allowJs": true // Allow importing JavaScript files if needed
+  },
+  "include": [
+    "**/*.spec.ts", // Include all spec files
+    "**/*.spec.tsx"
+  ]
+}
